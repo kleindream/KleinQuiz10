@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Klein Quiz 1.0 - O Desafio do Técnico de Informática</title>
+  <meta name="description" content="Quiz retrô de informática criado para testar conhecimentos de hardware, Windows, internet e tecnologia." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="desktop">
+    <section class="window" id="app">
+      <header class="title-bar">
+        <div class="title">Klein Quiz 1.0</div>
+        <div class="window-buttons" aria-hidden="true">
+          <span>_</span><span>□</span><span>×</span>
+        </div>
+      </header>
+
+      <section class="content">
+        <div id="start-screen" class="screen active">
+          <div class="logo-box">
+            <h1>KLEIN QUIZ 1.0</h1>
+            <p>O Desafio do Técnico de Informática</p>
+          </div>
+
+          <p class="intro">
+            Teste seus conhecimentos em hardware, Windows, internet e tecnologia.
+            São 15 perguntas com dificuldade equilibrada: simples o suficiente para começar,
+            técnicas o bastante para não parecer quiz de revista.
+          </p>
+
+          <div class="panel">
+            <p><strong>Regras:</strong></p>
+            <p>• Cada acerto vale 10 pontos.</p>
+            <p>• Ao responder, você verá uma explicação curta.</p>
+            <p>• Sem cronômetro: conhecimento vale mais que pressa.</p>
+          </div>
+
+          <button class="primary" id="start-btn">Iniciar Quiz</button>
+          <button class="secondary" id="credits-btn">Créditos</button>
+        </div>
+
+        <div id="quiz-screen" class="screen">
+          <div class="status-line">
+            <span id="question-counter">Pergunta 1/15</span>
+            <span id="score-counter">Pontuação: 0</span>
+          </div>
+
+          <div class="progress-shell">
+            <div id="progress-bar" class="progress-bar"></div>
+          </div>
+
+          <h2 id="question-text"></h2>
+          <div id="answers" class="answers"></div>
+
+          <div id="feedback" class="feedback hidden"></div>
+          <button class="primary hidden" id="next-btn">Próxima</button>
+        </div>
+
+        <div id="result-screen" class="screen">
+          <h1>Resultado Final</h1>
+          <div class="result-card">
+            <p id="final-score" class="final-score"></p>
+            <h2 id="rank-title"></h2>
+            <p id="rank-message"></p>
+          </div>
+
+          <button class="primary" id="restart-btn">Jogar Novamente</button>
+          <button class="secondary" id="back-home-btn">Voltar ao Início</button>
+        </div>
+
+        <div id="credits-screen" class="screen">
+          <h1>Créditos</h1>
+          <div class="panel">
+            <p><strong>Klein Quiz 1.0</strong></p>
+            <p>O Desafio do Técnico de Informática</p>
+            <br />
+            <p>Desenvolvido por <strong>Digão / Klein Dream</strong></p>
+            <p>Com auxílio da IA <strong>Lolita</strong></p>
+            <br />
+            <p>Licença: MIT</p>
+          </div>
+          <button class="primary" id="credits-back-btn">Voltar</button>
+        </div>
+      </section>
+
+      <footer class="footer-bar">
+        <span>Klein Dream Software</span>
+        <span>MIT License</span>
+      </footer>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
